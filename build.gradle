@@ -8,6 +8,21 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
+test {
+    testLogging {
+        events 'PASSED', 'SKIPPED', 'FAILED', 'STANDARD_OUT', 'STANDARD_ERROR'
+        showStackTraces true
+        exceptionFormat 'FULL'
+        showStandardStreams true
+    }
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ParkingLotKt'
+    }
+}
+
 repositories {
     mavenCentral()
 }
