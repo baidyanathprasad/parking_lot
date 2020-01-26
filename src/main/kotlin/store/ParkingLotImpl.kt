@@ -1,10 +1,13 @@
 package store
 
+import data.ParkingLotDao
 import model.Slot
 import model.Vehicle
 
 class ParkingLotImpl : ParkingLot {
-    override fun createParkingSlot(number: Int) = "Allocated slot number: $number"
+    private val parkingLotDao = ParkingLotDao()
+
+    override fun createParkingSlot(number: Int) = parkingLotDao.createSlotOfSize(number)
 
     override fun park(slot: Slot, vehicle: Vehicle): String {
         TODO("not implemented")
@@ -14,9 +17,7 @@ class ParkingLotImpl : ParkingLot {
         TODO("not implemented")
     }
 
-    override fun status(): List<Slot> {
-        TODO("not implemented")
-    }
+    override fun status() = parkingLotDao.getSlots()
 
     override fun filterVehiclesByColor(color: String): List<Vehicle> {
         TODO("not implemented")
