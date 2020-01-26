@@ -11,12 +11,10 @@ interface ParkingLot {
     fun createParkingSlot(number: Int): String
 
     /**
-     * @param slot
      * @param vehicle
-     *
      * park the vehicle
      */
-    fun park(slot: Slot, vehicle: Vehicle): String
+    fun park(vehicle: Vehicle): String
 
     /**
      * @param slotNumber
@@ -39,7 +37,7 @@ interface ParkingLot {
      * @param color
      * filter slot numbers by color
      */
-    fun slotNumbersByColor(color: String): List<Slot>
+    fun filterSlotNumbersByColor(color: String): List<Slot>
 
     /**
      * @param registrationNumber
