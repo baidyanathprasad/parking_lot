@@ -1,9 +1,11 @@
-import model.Vehicle
-import store.ParkingLotImpl
+package com.test
+
+import com.test.model.Vehicle
+import com.test.store.ParkingLotImpl
 import kotlin.system.exitProcess
 
 fun main() {
-    // main method
+    // com.test.main method
     //val input = File("input.txt").readLines()
 
     val parkingLot = ParkingLotImpl()

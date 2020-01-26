@@ -1,4 +1,4 @@
-package model
+package com.test.model
 
 data class Slot(
     val number: Int,

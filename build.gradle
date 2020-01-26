@@ -19,7 +19,7 @@ test {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'AppKt'
+        attributes 'Main-Class': 'com.test.AppKt'
     }
 }
 

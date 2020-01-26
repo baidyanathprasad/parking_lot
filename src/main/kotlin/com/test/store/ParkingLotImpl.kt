@@ -1,7 +1,7 @@
-package store
+package com.test.store
 
-import data.ParkingLotDao
-import model.Vehicle
+import com.test.data.ParkingLotDao
+import com.test.model.Vehicle
 import kotlin.streams.toList
 
 class ParkingLotImpl : ParkingLot {

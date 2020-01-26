@@ -1,7 +1,7 @@
-package store
+package com.test.store
 
-import model.Slot
-import model.Vehicle
+import com.test.model.Slot
+import com.test.model.Vehicle
 
 interface ParkingLot {
 
